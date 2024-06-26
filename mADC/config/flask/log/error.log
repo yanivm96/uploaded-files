@@ -1,0 +1,2973 @@
+[2023-12-24 09:58:23 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['127.0.0.1:4200']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9d7c1f83a0>
+  on_reload: <function OnReload.on_reload at 0x7f9d7c1f84c0>
+  when_ready: <function WhenReady.when_ready at 0x7f9d7c1f85e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f9d7c1f8700>
+  post_fork: <function Postfork.post_fork at 0x7f9d7c1f8820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9d7c1f8940>
+  worker_int: <function WorkerInt.worker_int at 0x7f9d7c1f8a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9d7c1f8b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f9d7c1f8ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f9d7c1f8dc0>
+  post_request: <function PostRequest.post_request at 0x7f9d7c1f8e50>
+  child_exit: <function ChildExit.child_exit at 0x7f9d7c1f8f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9d7c1f9090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9d7c1f91b0>
+  on_exit: <function OnExit.on_exit at 0x7f9d7c1f92d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f9d7c1f93f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-12-24 09:58:23 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2023-12-24 09:58:23 +0000] [1] [DEBUG] Arbiter booted
+[2023-12-24 09:58:23 +0000] [1] [INFO] Listening at: http://127.0.0.1:4200 (1)
+[2023-12-24 09:58:23 +0000] [1] [INFO] Using worker: gthread
+[2023-12-24 09:58:23 +0000] [15] [INFO] Booting worker with pid: 15
+[2023-12-24 09:58:23 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+[Errno 2] No such file or directory: '/misc/work/sequence_data_store/Macaque_R24/runs/M24_AIRR-seq_Nov_23/annotated'
+local variable 'tsv_files' referenced before assignment
+[2023-12-24 09:59:45 +0000] [15] [DEBUG] GET /
+[2023-12-24 09:59:45 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-24 09:59:49 +0000] [15] [DEBUG] GET /v1
+[2023-12-24 09:59:49 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-24 13:28:17 +0000] [15] [DEBUG] GET /v1
+[2023-12-24 13:28:17 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-24 13:31:26 +0000] [15] [DEBUG] GET /airr/v1
+[2023-12-24 13:31:26 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-24 13:31:57 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-24 13:31:57 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-24 13:32:50 +0000] [15] [DEBUG] GET /v1/
+[2023-12-24 13:32:50 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-24 13:32:55 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-24 13:32:55 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 08:11:10 +0000] [1] [INFO] Handling signal: term
+[2023-12-27 08:11:10 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2023-12-27 08:11:11 +0000] [1] [INFO] Shutting down: Master
+[2023-12-27 08:12:53 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5a38f583a0>
+  on_reload: <function OnReload.on_reload at 0x7f5a38f584c0>
+  when_ready: <function WhenReady.when_ready at 0x7f5a38f585e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f5a38f58700>
+  post_fork: <function Postfork.post_fork at 0x7f5a38f58820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5a38f58940>
+  worker_int: <function WorkerInt.worker_int at 0x7f5a38f58a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5a38f58b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f5a38f58ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f5a38f58dc0>
+  post_request: <function PostRequest.post_request at 0x7f5a38f58e50>
+  child_exit: <function ChildExit.child_exit at 0x7f5a38f58f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5a38f59090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5a38f591b0>
+  on_exit: <function OnExit.on_exit at 0x7f5a38f592d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f5a38f593f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-12-27 08:12:53 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2023-12-27 08:12:53 +0000] [1] [DEBUG] Arbiter booted
+[2023-12-27 08:12:53 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2023-12-27 08:12:53 +0000] [1] [INFO] Using worker: gthread
+[2023-12-27 08:12:53 +0000] [15] [INFO] Booting worker with pid: 15
+[2023-12-27 08:12:53 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+[Errno 20] Not a directory: '/misc/work/sequence_data_store/Macaque_R24/runs/M24_AIRR-seq_Nov_23/annotated/RBc20/sample_1/RBc20.Rep1.CGTTTGCT.NNNNNAGCAAACG.220711_M04545_0044_000000000-KJCKH.IgM/meta_data/annotation_metadata.json'
+local variable 'tsv_files' referenced before assignment
+[2023-12-27 08:17:59 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-27 08:17:59 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 08:40:05 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-27 08:40:05 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 08:54:21 +0000] [15] [DEBUG] GET /
+[2023-12-27 08:54:21 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 08:56:38 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-27 08:56:38 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 08:59:03 +0000] [1] [INFO] Handling signal: term
+[2023-12-27 08:59:03 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2023-12-27 08:59:04 +0000] [1] [INFO] Shutting down: Master
+[2023-12-27 08:59:22 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f069da883a0>
+  on_reload: <function OnReload.on_reload at 0x7f069da884c0>
+  when_ready: <function WhenReady.when_ready at 0x7f069da885e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f069da88700>
+  post_fork: <function Postfork.post_fork at 0x7f069da88820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f069da88940>
+  worker_int: <function WorkerInt.worker_int at 0x7f069da88a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f069da88b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f069da88ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f069da88dc0>
+  post_request: <function PostRequest.post_request at 0x7f069da88e50>
+  child_exit: <function ChildExit.child_exit at 0x7f069da88f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f069da89090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f069da891b0>
+  on_exit: <function OnExit.on_exit at 0x7f069da892d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f069da893f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-12-27 08:59:22 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2023-12-27 08:59:22 +0000] [1] [DEBUG] Arbiter booted
+[2023-12-27 08:59:22 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2023-12-27 08:59:22 +0000] [1] [INFO] Using worker: gthread
+[2023-12-27 08:59:22 +0000] [15] [INFO] Booting worker with pid: 15
+[2023-12-27 08:59:22 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+[Errno 20] Not a directory: '/misc/work/sequence_data_store/Macaque_R24/runs/M24_AIRR-seq_Nov_23/annotated/RBc20/sample_1/RBc20.Rep1.CGTTTGCT.NNNNNAGCAAACG.220711_M04545_0044_000000000-KJCKH.IgM/meta_data/annotation_metadata.json'
+local variable 'tsv_files' referenced before assignment
+[2023-12-27 08:59:24 +0000] [15] [DEBUG] GET /
+[2023-12-27 08:59:24 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 08:59:29 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-27 08:59:29 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 09:00:03 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-27 09:00:03 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-27 09:04:16 +0000] [1] [INFO] Handling signal: term
+[2023-12-27 09:04:16 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2023-12-27 09:04:16 +0000] [1] [INFO] Shutting down: Master
+[2023-12-27 09:04:27 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f89e44743a0>
+  on_reload: <function OnReload.on_reload at 0x7f89e44744c0>
+  when_ready: <function WhenReady.when_ready at 0x7f89e44745e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f89e4474700>
+  post_fork: <function Postfork.post_fork at 0x7f89e4474820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f89e4474940>
+  worker_int: <function WorkerInt.worker_int at 0x7f89e4474a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f89e4474b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f89e4474ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f89e4474dc0>
+  post_request: <function PostRequest.post_request at 0x7f89e4474e50>
+  child_exit: <function ChildExit.child_exit at 0x7f89e4474f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f89e4475090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f89e44751b0>
+  on_exit: <function OnExit.on_exit at 0x7f89e44752d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f89e44753f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-12-27 09:04:27 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2023-12-27 09:04:27 +0000] [1] [DEBUG] Arbiter booted
+[2023-12-27 09:04:27 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2023-12-27 09:04:27 +0000] [1] [INFO] Using worker: gthread
+[2023-12-27 09:04:27 +0000] [15] [INFO] Booting worker with pid: 15
+[2023-12-27 09:04:27 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+[Errno 20] Not a directory: '/misc/work/sequence_data_store/Macaque_R24/runs/M24_AIRR-seq_Nov_23/annotated/RBc20/sample_1/RBc20.Rep1.CGTTTGCT.NNNNNAGCAAACG.220711_M04545_0044_000000000-KJCKH.IgM/meta_data/annotation_metadata.json'
+local variable 'tsv_files' referenced before assignment
+[2023-12-28 10:46:29 +0000] [15] [DEBUG] GET /
+[2023-12-28 10:46:29 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-28 10:46:34 +0000] [15] [DEBUG] GET /airr/v1
+[2023-12-28 10:46:34 +0000] [15] [DEBUG] Closing connection. 
+[2023-12-28 10:46:36 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2023-12-28 10:46:36 +0000] [15] [DEBUG] Closing connection. 
+[2024-01-01 10:07:39 +0000] [1] [INFO] Handling signal: term
+[2024-01-01 10:07:40 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-01-01 10:07:40 +0000] [1] [INFO] Shutting down: Master
+[2024-01-01 10:10:46 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4fc80243a0>
+  on_reload: <function OnReload.on_reload at 0x7f4fc80244c0>
+  when_ready: <function WhenReady.when_ready at 0x7f4fc80245e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f4fc8024700>
+  post_fork: <function Postfork.post_fork at 0x7f4fc8024820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4fc8024940>
+  worker_int: <function WorkerInt.worker_int at 0x7f4fc8024a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4fc8024b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f4fc8024ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f4fc8024dc0>
+  post_request: <function PostRequest.post_request at 0x7f4fc8024e50>
+  child_exit: <function ChildExit.child_exit at 0x7f4fc8024f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4fc8025090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4fc80251b0>
+  on_exit: <function OnExit.on_exit at 0x7f4fc80252d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f4fc80253f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-01-01 10:10:46 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-01-01 10:10:46 +0000] [1] [DEBUG] Arbiter booted
+[2024-01-01 10:10:46 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-01-01 10:10:46 +0000] [1] [INFO] Using worker: gthread
+[2024-01-01 10:10:46 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-01-01 10:10:46 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-01-01 10:12:01 +0000] [1] [INFO] Handling signal: term
+[2024-01-01 10:12:02 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-01-01 10:12:02 +0000] [1] [INFO] Shutting down: Master
+[2024-01-01 10:24:20 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5dc3c403a0>
+  on_reload: <function OnReload.on_reload at 0x7f5dc3c404c0>
+  when_ready: <function WhenReady.when_ready at 0x7f5dc3c405e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f5dc3c40700>
+  post_fork: <function Postfork.post_fork at 0x7f5dc3c40820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5dc3c40940>
+  worker_int: <function WorkerInt.worker_int at 0x7f5dc3c40a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5dc3c40b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f5dc3c40ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f5dc3c40dc0>
+  post_request: <function PostRequest.post_request at 0x7f5dc3c40e50>
+  child_exit: <function ChildExit.child_exit at 0x7f5dc3c40f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5dc3c41090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5dc3c411b0>
+  on_exit: <function OnExit.on_exit at 0x7f5dc3c412d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f5dc3c413f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-01-01 10:24:20 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-01-01 10:24:20 +0000] [1] [DEBUG] Arbiter booted
+[2024-01-01 10:24:20 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-01-01 10:24:20 +0000] [1] [INFO] Using worker: gthread
+[2024-01-01 10:24:20 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-01-01 10:24:20 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-01-02 09:19:08 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2024-01-02 09:19:08 +0000] [15] [DEBUG] Closing connection. 
+[2024-01-02 09:37:29 +0000] [1] [INFO] Handling signal: term
+[2024-01-02 09:37:29 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-01-02 09:37:30 +0000] [1] [INFO] Shutting down: Master
+[2024-01-02 10:29:14 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f525b64c3a0>
+  on_reload: <function OnReload.on_reload at 0x7f525b64c4c0>
+  when_ready: <function WhenReady.when_ready at 0x7f525b64c5e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f525b64c700>
+  post_fork: <function Postfork.post_fork at 0x7f525b64c820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f525b64c940>
+  worker_int: <function WorkerInt.worker_int at 0x7f525b64ca60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f525b64cb80>
+  pre_exec: <function PreExec.pre_exec at 0x7f525b64cca0>
+  pre_request: <function PreRequest.pre_request at 0x7f525b64cdc0>
+  post_request: <function PostRequest.post_request at 0x7f525b64ce50>
+  child_exit: <function ChildExit.child_exit at 0x7f525b64cf70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f525b64d090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f525b64d1b0>
+  on_exit: <function OnExit.on_exit at 0x7f525b64d2d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f525b64d3f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-01-02 10:29:14 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-01-02 10:29:14 +0000] [1] [DEBUG] Arbiter booted
+[2024-01-02 10:29:14 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-01-02 10:29:14 +0000] [1] [INFO] Using worker: gthread
+[2024-01-02 10:29:14 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-01-02 10:29:14 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-01-02 10:30:04 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2024-01-02 10:30:04 +0000] [15] [DEBUG] Closing connection.
+[2024-01-02 10:30:14 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2024-01-02 10:30:14 +0000] [15] [DEBUG] Closing connection.
+[2024-01-21 05:12:50 +0000] [1] [INFO] Handling signal: term
+[2024-01-21 05:12:52 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-01-21 05:13:31 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f79f7fbc4c0>
+  on_reload: <function OnReload.on_reload at 0x7f79f7fbc5e0>
+  when_ready: <function WhenReady.when_ready at 0x7f79f7fbc700>
+  pre_fork: <function Prefork.pre_fork at 0x7f79f7fbc820>
+  post_fork: <function Postfork.post_fork at 0x7f79f7fbc940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f79f7fbca60>
+  worker_int: <function WorkerInt.worker_int at 0x7f79f7fbcb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f79f7fbcca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f79f7fbcdc0>
+  pre_request: <function PreRequest.pre_request at 0x7f79f7fbcee0>
+  post_request: <function PostRequest.post_request at 0x7f79f7fbcf70>
+  child_exit: <function ChildExit.child_exit at 0x7f79f7fbd090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f79f7fbd1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f79f7fbd2d0>
+  on_exit: <function OnExit.on_exit at 0x7f79f7fbd3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f79f7fbd510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-01-21 05:13:31 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-01-21 05:13:31 +0000] [1] [DEBUG] Arbiter booted
+[2024-01-21 05:13:31 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-01-21 05:13:31 +0000] [1] [INFO] Using worker: gthread
+[2024-01-21 05:13:31 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-01-21 05:13:31 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-01-24 05:19:46 +0000] [1] [INFO] Handling signal: term
+[2024-01-24 05:19:46 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-01-24 05:19:47 +0000] [1] [INFO] Shutting down: Master
+[2024-01-24 05:32:21 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f13ec6944c0>
+  on_reload: <function OnReload.on_reload at 0x7f13ec6945e0>
+  when_ready: <function WhenReady.when_ready at 0x7f13ec694700>
+  pre_fork: <function Prefork.pre_fork at 0x7f13ec694820>
+  post_fork: <function Postfork.post_fork at 0x7f13ec694940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f13ec694a60>
+  worker_int: <function WorkerInt.worker_int at 0x7f13ec694b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f13ec694ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f13ec694dc0>
+  pre_request: <function PreRequest.pre_request at 0x7f13ec694ee0>
+  post_request: <function PostRequest.post_request at 0x7f13ec694f70>
+  child_exit: <function ChildExit.child_exit at 0x7f13ec695090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f13ec6951b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f13ec6952d0>
+  on_exit: <function OnExit.on_exit at 0x7f13ec6953f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f13ec695510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-01-24 05:32:21 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-01-24 05:32:21 +0000] [1] [DEBUG] Arbiter booted
+[2024-01-24 05:32:21 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-01-24 05:32:21 +0000] [1] [INFO] Using worker: gthread
+[2024-01-24 05:32:21 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-01-24 05:32:21 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-01-24 08:56:14 +0000] [1] [INFO] Handling signal: term
+[2024-01-24 08:56:15 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-01-24 08:56:15 +0000] [1] [INFO] Shutting down: Master
+[2024-01-24 12:04:38 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc64abd04c0>
+  on_reload: <function OnReload.on_reload at 0x7fc64abd05e0>
+  when_ready: <function WhenReady.when_ready at 0x7fc64abd0700>
+  pre_fork: <function Prefork.pre_fork at 0x7fc64abd0820>
+  post_fork: <function Postfork.post_fork at 0x7fc64abd0940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc64abd0a60>
+  worker_int: <function WorkerInt.worker_int at 0x7fc64abd0b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc64abd0ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc64abd0dc0>
+  pre_request: <function PreRequest.pre_request at 0x7fc64abd0ee0>
+  post_request: <function PostRequest.post_request at 0x7fc64abd0f70>
+  child_exit: <function ChildExit.child_exit at 0x7fc64abd1090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc64abd11b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc64abd12d0>
+  on_exit: <function OnExit.on_exit at 0x7fc64abd13f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fc64abd1510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-01-24 12:04:38 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-01-24 12:04:38 +0000] [1] [DEBUG] Arbiter booted
+[2024-01-24 12:04:38 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-01-24 12:04:38 +0000] [1] [INFO] Using worker: gthread
+[2024-01-24 12:04:38 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-01-24 12:04:38 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-02-04 05:23:46 +0000] [1] [INFO] Handling signal: term
+[2024-02-04 05:23:46 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-02-04 05:23:46 +0000] [1] [INFO] Shutting down: Master
+[2024-02-04 05:24:09 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7c43c9c4c0>
+  on_reload: <function OnReload.on_reload at 0x7f7c43c9c5e0>
+  when_ready: <function WhenReady.when_ready at 0x7f7c43c9c700>
+  pre_fork: <function Prefork.pre_fork at 0x7f7c43c9c820>
+  post_fork: <function Postfork.post_fork at 0x7f7c43c9c940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7c43c9ca60>
+  worker_int: <function WorkerInt.worker_int at 0x7f7c43c9cb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7c43c9cca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f7c43c9cdc0>
+  pre_request: <function PreRequest.pre_request at 0x7f7c43c9cee0>
+  post_request: <function PostRequest.post_request at 0x7f7c43c9cf70>
+  child_exit: <function ChildExit.child_exit at 0x7f7c43c9d090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7c43c9d1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7c43c9d2d0>
+  on_exit: <function OnExit.on_exit at 0x7f7c43c9d3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f7c43c9d510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-04 05:24:09 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-02-04 05:24:09 +0000] [1] [DEBUG] Arbiter booted
+[2024-02-04 05:24:09 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-02-04 05:24:09 +0000] [1] [INFO] Using worker: gthread
+[2024-02-04 05:24:09 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-02-04 05:24:09 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-02-08 05:27:35 +0000] [1] [INFO] Handling signal: term
+[2024-02-08 05:27:35 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-02-08 05:27:35 +0000] [1] [INFO] Shutting down: Master
+[2024-02-08 05:27:55 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc6632844c0>
+  on_reload: <function OnReload.on_reload at 0x7fc6632845e0>
+  when_ready: <function WhenReady.when_ready at 0x7fc663284700>
+  pre_fork: <function Prefork.pre_fork at 0x7fc663284820>
+  post_fork: <function Postfork.post_fork at 0x7fc663284940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc663284a60>
+  worker_int: <function WorkerInt.worker_int at 0x7fc663284b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc663284ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc663284dc0>
+  pre_request: <function PreRequest.pre_request at 0x7fc663284ee0>
+  post_request: <function PostRequest.post_request at 0x7fc663284f70>
+  child_exit: <function ChildExit.child_exit at 0x7fc663285090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc6632851b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc6632852d0>
+  on_exit: <function OnExit.on_exit at 0x7fc6632853f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fc663285510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-08 05:27:55 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-02-08 05:27:55 +0000] [1] [DEBUG] Arbiter booted
+[2024-02-08 05:27:55 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-02-08 05:27:55 +0000] [1] [INFO] Using worker: gthread
+[2024-02-08 05:27:55 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-02-08 05:27:55 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-02-14 10:53:13 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f59ca0f83a0>
+  on_reload: <function OnReload.on_reload at 0x7f59ca0f84c0>
+  when_ready: <function WhenReady.when_ready at 0x7f59ca0f85e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f59ca0f8700>
+  post_fork: <function Postfork.post_fork at 0x7f59ca0f8820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f59ca0f8940>
+  worker_int: <function WorkerInt.worker_int at 0x7f59ca0f8a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f59ca0f8b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f59ca0f8ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f59ca0f8dc0>
+  post_request: <function PostRequest.post_request at 0x7f59ca0f8e50>
+  child_exit: <function ChildExit.child_exit at 0x7f59ca0f8f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f59ca0f9090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f59ca0f91b0>
+  on_exit: <function OnExit.on_exit at 0x7f59ca0f92d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f59ca0f93f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-14 10:53:13 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-02-14 10:53:13 +0000] [1] [DEBUG] Arbiter booted
+[2024-02-14 10:53:13 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-02-14 10:53:13 +0000] [1] [INFO] Using worker: gthread
+[2024-02-14 10:53:13 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-02-14 10:53:13 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-02-21 09:30:17 +0000] [1] [INFO] Handling signal: term
+[2024-02-21 09:30:17 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-02-21 09:30:18 +0000] [1] [INFO] Shutting down: Master
+[2024-02-21 09:47:58 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f01412904c0>
+  on_reload: <function OnReload.on_reload at 0x7f01412905e0>
+  when_ready: <function WhenReady.when_ready at 0x7f0141290700>
+  pre_fork: <function Prefork.pre_fork at 0x7f0141290820>
+  post_fork: <function Postfork.post_fork at 0x7f0141290940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0141290a60>
+  worker_int: <function WorkerInt.worker_int at 0x7f0141290b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0141290ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f0141290dc0>
+  pre_request: <function PreRequest.pre_request at 0x7f0141290ee0>
+  post_request: <function PostRequest.post_request at 0x7f0141290f70>
+  child_exit: <function ChildExit.child_exit at 0x7f0141291090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f01412911b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f01412912d0>
+  on_exit: <function OnExit.on_exit at 0x7f01412913f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f0141291510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-21 09:47:58 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-02-21 09:47:58 +0000] [1] [DEBUG] Arbiter booted
+[2024-02-21 09:47:58 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-02-21 09:47:58 +0000] [1] [INFO] Using worker: gthread
+[2024-02-21 09:47:58 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-02-21 09:47:58 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-02-21 10:35:52 +0000] [15] [DEBUG] GET /v1/
+[2024-02-21 10:35:52 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 10:35:55 +0000] [15] [DEBUG] GET /v1
+[2024-02-21 10:35:55 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 10:36:08 +0000] [15] [DEBUG] GET /v1/info
+[2024-02-21 10:36:08 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 10:36:10 +0000] [15] [DEBUG] GET /v1/info/
+[2024-02-21 10:36:10 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 10:36:39 +0000] [1] [INFO] Handling signal: term
+[2024-02-21 10:36:39 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-02-21 10:36:39 +0000] [1] [INFO] Shutting down: Master
+[2024-02-21 10:36:49 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f81e75c03a0>
+  on_reload: <function OnReload.on_reload at 0x7f81e75c04c0>
+  when_ready: <function WhenReady.when_ready at 0x7f81e75c05e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f81e75c0700>
+  post_fork: <function Postfork.post_fork at 0x7f81e75c0820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f81e75c0940>
+  worker_int: <function WorkerInt.worker_int at 0x7f81e75c0a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f81e75c0b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f81e75c0ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f81e75c0dc0>
+  post_request: <function PostRequest.post_request at 0x7f81e75c0e50>
+  child_exit: <function ChildExit.child_exit at 0x7f81e75c0f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f81e75c1090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f81e75c11b0>
+  on_exit: <function OnExit.on_exit at 0x7f81e75c12d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f81e75c13f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-21 10:36:49 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-02-21 10:36:49 +0000] [1] [DEBUG] Arbiter booted
+[2024-02-21 10:36:49 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-02-21 10:36:49 +0000] [1] [INFO] Using worker: gthread
+[2024-02-21 10:36:49 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-02-21 10:36:49 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[Errno 2] No such file or directory: '/studies/PRJNA248411/metadata.json'
+[2024-02-21 10:38:47 +0000] [15] [DEBUG] GET /v1/info/
+[2024-02-21 10:38:47 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 10:38:49 +0000] [15] [DEBUG] GET /v1/info
+[2024-02-21 10:38:49 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 10:39:20 +0000] [15] [DEBUG] GET /v1/
+[2024-02-21 10:39:20 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 10:41:34 +0000] [15] [DEBUG] GET /airr/v1/
+INFO:app:Service status was reached
+[2024-02-21 10:41:34 +0000] [15] [DEBUG] Closing connection.
+[2024-02-21 13:59:11 +0000] [1] [INFO] Handling signal: term
+[2024-02-21 13:59:12 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-02-21 13:59:12 +0000] [1] [INFO] Shutting down: Master
+[2024-02-22 09:22:56 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc8ad7643a0>
+  on_reload: <function OnReload.on_reload at 0x7fc8ad7644c0>
+  when_ready: <function WhenReady.when_ready at 0x7fc8ad7645e0>
+  pre_fork: <function Prefork.pre_fork at 0x7fc8ad764700>
+  post_fork: <function Postfork.post_fork at 0x7fc8ad764820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc8ad764940>
+  worker_int: <function WorkerInt.worker_int at 0x7fc8ad764a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc8ad764b80>
+  pre_exec: <function PreExec.pre_exec at 0x7fc8ad764ca0>
+  pre_request: <function PreRequest.pre_request at 0x7fc8ad764dc0>
+  post_request: <function PostRequest.post_request at 0x7fc8ad764e50>
+  child_exit: <function ChildExit.child_exit at 0x7fc8ad764f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc8ad765090>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc8ad7651b0>
+  on_exit: <function OnExit.on_exit at 0x7fc8ad7652d0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fc8ad7653f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 09:22:56 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 09:22:56 +0000] [1] [DEBUG] Arbiter booted
+[2024-02-22 09:22:56 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-02-22 09:22:56 +0000] [1] [INFO] Using worker: gthread
+[2024-02-22 09:22:56 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-02-22 09:22:56 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-02-22 09:25:22 +0000] [15] [DEBUG] GET /airr/v1/info
+INFO:app:Service information was reached
+[2024-02-22 09:25:22 +0000] [15] [DEBUG] Closing connection.
+[2024-02-22 09:26:19 +0000] [15] [DEBUG] GET /airr/v1/repertoire/ERR2567187__Finale_db-pass
+[2024-02-22 09:26:19 +0000] [15] [DEBUG] Closing connection.
+[2024-02-22 09:26:22 +0000] [15] [DEBUG] GET /airr/v1/repertoire/ERR2567187__Finale_db-pass
+[2024-02-22 09:26:22 +0000] [15] [DEBUG] Closing connection.
+[2024-02-22 09:26:30 +0000] [15] [DEBUG] GET /airr/v1/repertoire/ERR2567187
+[2024-02-22 09:26:30 +0000] [15] [DEBUG] Closing connection.
+[2024-02-22 09:26:34 +0000] [15] [DEBUG] GET /airr/v1/repertoire/ERR2567187
+[2024-02-22 09:26:34 +0000] [15] [DEBUG] Closing connection.
+[2024-02-22 09:29:19 +0000] [15] [DEBUG] POST /airr//v1/repertoire
+[2024-02-22 09:29:19 +0000] [15] [DEBUG] Closing connection.
+[2024-02-22 09:30:01 +0000] [15] [DEBUG] POST /airr/v1/repertoire
+INFO:app:Repertoire list was reached
+[2024-02-22 09:30:01 +0000] [15] [ERROR] Error handling request /airr/v1/repertoire
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 282, in handle
+    keepalive = self.handle_request(req, conn)
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 334, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2193, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 673, in error_router
+    return original_handler(f)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 671, in error_router
+    return self.handle_error(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 673, in error_router
+    return original_handler(f)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 671, in error_router
+    return self.handle_error(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 404, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/flask/views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/resource.py", line 46, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/app/repertoire.py", line 63, in post
+    if request.content_length > 0:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2024-02-22 09:30:05 +0000] [15] [DEBUG] POST /airr/v1/repertoire
+INFO:app:Repertoire list was reached
+[2024-02-22 09:30:05 +0000] [15] [ERROR] Error handling request /airr/v1/repertoire
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 282, in handle
+    keepalive = self.handle_request(req, conn)
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 334, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2193, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 673, in error_router
+    return original_handler(f)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 671, in error_router
+    return self.handle_error(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 673, in error_router
+    return original_handler(f)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 671, in error_router
+    return self.handle_error(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 404, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/flask/views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/resource.py", line 46, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/app/repertoire.py", line 63, in post
+    if request.content_length > 0:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2024-02-22 09:30:31 +0000] [15] [DEBUG] POST /airr/v1/repertoire
+INFO:app:Repertoire list was reached
+[2024-02-22 09:30:31 +0000] [15] [ERROR] Error handling request /airr/v1/repertoire
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 282, in handle
+    keepalive = self.handle_request(req, conn)
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/gthread.py", line 334, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2193, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 673, in error_router
+    return original_handler(f)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 671, in error_router
+    return self.handle_error(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 673, in error_router
+    return original_handler(f)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 671, in error_router
+    return self.handle_error(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/api.py", line 404, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/flask/views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/usr/local/lib/python3.10/site-packages/flask_restx/resource.py", line 46, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/app/repertoire.py", line 63, in post
+    if request.content_length > 0:
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2024-02-22 09:32:23 +0000] [15] [DEBUG] POST /airr/v1/repertoire
+INFO:app:Repertoire list was reached
+[2024-02-22 09:32:23 +0000] [15] [DEBUG] Closing connection.
+[2024-03-08 10:05:40 +0000] [1] [INFO] Handling signal: term
+[2024-03-08 10:05:41 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-03-08 10:05:41 +0000] [1] [INFO] Shutting down: Master
+[2024-03-08 10:06:25 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fa80541c4c0>
+  on_reload: <function OnReload.on_reload at 0x7fa80541c5e0>
+  when_ready: <function WhenReady.when_ready at 0x7fa80541c700>
+  pre_fork: <function Prefork.pre_fork at 0x7fa80541c820>
+  post_fork: <function Postfork.post_fork at 0x7fa80541c940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fa80541ca60>
+  worker_int: <function WorkerInt.worker_int at 0x7fa80541cb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fa80541cca0>
+  pre_exec: <function PreExec.pre_exec at 0x7fa80541cdc0>
+  pre_request: <function PreRequest.pre_request at 0x7fa80541cee0>
+  post_request: <function PostRequest.post_request at 0x7fa80541cf70>
+  child_exit: <function ChildExit.child_exit at 0x7fa80541d090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fa80541d1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fa80541d2d0>
+  on_exit: <function OnExit.on_exit at 0x7fa80541d3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fa80541d510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-08 10:06:25 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-03-08 10:06:25 +0000] [1] [DEBUG] Arbiter booted
+[2024-03-08 10:06:25 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-03-08 10:06:25 +0000] [1] [INFO] Using worker: gthread
+[2024-03-08 10:06:25 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-03-08 10:06:25 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-03-20 08:13:48 +0000] [1] [INFO] Handling signal: term
+[2024-03-20 08:13:48 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-03-20 08:13:49 +0000] [1] [INFO] Shutting down: Master
+[2024-03-20 08:15:57 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5b6754c4c0>
+  on_reload: <function OnReload.on_reload at 0x7f5b6754c5e0>
+  when_ready: <function WhenReady.when_ready at 0x7f5b6754c700>
+  pre_fork: <function Prefork.pre_fork at 0x7f5b6754c820>
+  post_fork: <function Postfork.post_fork at 0x7f5b6754c940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5b6754ca60>
+  worker_int: <function WorkerInt.worker_int at 0x7f5b6754cb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5b6754cca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f5b6754cdc0>
+  pre_request: <function PreRequest.pre_request at 0x7f5b6754cee0>
+  post_request: <function PostRequest.post_request at 0x7f5b6754cf70>
+  child_exit: <function ChildExit.child_exit at 0x7f5b6754d090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5b6754d1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5b6754d2d0>
+  on_exit: <function OnExit.on_exit at 0x7f5b6754d3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f5b6754d510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-20 08:15:57 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-03-20 08:15:57 +0000] [1] [DEBUG] Arbiter booted
+[2024-03-20 08:15:57 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-03-20 08:15:57 +0000] [1] [INFO] Using worker: gthread
+[2024-03-20 08:15:57 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-03-20 08:15:57 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-03-24 10:30:38 +0000] [1] [INFO] Handling signal: term
+[2024-03-24 10:30:39 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-03-24 10:30:39 +0000] [1] [INFO] Shutting down: Master
+[2024-03-24 10:31:24 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc8201a44c0>
+  on_reload: <function OnReload.on_reload at 0x7fc8201a45e0>
+  when_ready: <function WhenReady.when_ready at 0x7fc8201a4700>
+  pre_fork: <function Prefork.pre_fork at 0x7fc8201a4820>
+  post_fork: <function Postfork.post_fork at 0x7fc8201a4940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc8201a4a60>
+  worker_int: <function WorkerInt.worker_int at 0x7fc8201a4b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc8201a4ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc8201a4dc0>
+  pre_request: <function PreRequest.pre_request at 0x7fc8201a4ee0>
+  post_request: <function PostRequest.post_request at 0x7fc8201a4f70>
+  child_exit: <function ChildExit.child_exit at 0x7fc8201a5090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc8201a51b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc8201a52d0>
+  on_exit: <function OnExit.on_exit at 0x7fc8201a53f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fc8201a5510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-24 10:31:24 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-03-24 10:31:24 +0000] [1] [DEBUG] Arbiter booted
+[2024-03-24 10:31:24 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-03-24 10:31:24 +0000] [1] [INFO] Using worker: gthread
+[2024-03-24 10:31:24 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-03-24 10:31:25 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-04-14 04:04:25 +0000] [1] [INFO] Handling signal: term
+[2024-04-14 04:04:26 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-04-14 04:04:27 +0000] [1] [INFO] Shutting down: Master
+[2024-04-14 04:05:32 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8bc7bec4c0>
+  on_reload: <function OnReload.on_reload at 0x7f8bc7bec5e0>
+  when_ready: <function WhenReady.when_ready at 0x7f8bc7bec700>
+  pre_fork: <function Prefork.pre_fork at 0x7f8bc7bec820>
+  post_fork: <function Postfork.post_fork at 0x7f8bc7bec940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8bc7beca60>
+  worker_int: <function WorkerInt.worker_int at 0x7f8bc7becb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8bc7becca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f8bc7becdc0>
+  pre_request: <function PreRequest.pre_request at 0x7f8bc7becee0>
+  post_request: <function PostRequest.post_request at 0x7f8bc7becf70>
+  child_exit: <function ChildExit.child_exit at 0x7f8bc7bed090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8bc7bed1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8bc7bed2d0>
+  on_exit: <function OnExit.on_exit at 0x7f8bc7bed3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f8bc7bed510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-04-14 04:05:32 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-04-14 04:05:32 +0000] [1] [DEBUG] Arbiter booted
+[2024-04-14 04:05:32 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-04-14 04:05:32 +0000] [1] [INFO] Using worker: gthread
+[2024-04-14 04:05:32 +0000] [14] [INFO] Booting worker with pid: 14
+[2024-04-14 04:05:33 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-04-24 04:14:03 +0000] [1] [INFO] Handling signal: term
+[2024-04-24 04:14:04 +0000] [14] [INFO] Worker exiting (pid: 14)
+[2024-04-24 04:14:04 +0000] [1] [INFO] Shutting down: Master
+[2024-04-24 04:14:57 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f02038a04c0>
+  on_reload: <function OnReload.on_reload at 0x7f02038a05e0>
+  when_ready: <function WhenReady.when_ready at 0x7f02038a0700>
+  pre_fork: <function Prefork.pre_fork at 0x7f02038a0820>
+  post_fork: <function Postfork.post_fork at 0x7f02038a0940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f02038a0a60>
+  worker_int: <function WorkerInt.worker_int at 0x7f02038a0b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f02038a0ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f02038a0dc0>
+  pre_request: <function PreRequest.pre_request at 0x7f02038a0ee0>
+  post_request: <function PostRequest.post_request at 0x7f02038a0f70>
+  child_exit: <function ChildExit.child_exit at 0x7f02038a1090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f02038a11b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f02038a12d0>
+  on_exit: <function OnExit.on_exit at 0x7f02038a13f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f02038a1510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-04-24 04:14:57 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-04-24 04:14:57 +0000] [1] [DEBUG] Arbiter booted
+[2024-04-24 04:14:57 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-04-24 04:14:57 +0000] [1] [INFO] Using worker: gthread
+[2024-04-24 04:14:57 +0000] [14] [INFO] Booting worker with pid: 14
+[2024-04-24 04:14:57 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-05-01 03:54:18 +0000] [1] [INFO] Handling signal: term
+[2024-05-01 03:54:19 +0000] [14] [INFO] Worker exiting (pid: 14)
+[2024-05-01 03:54:19 +0000] [1] [INFO] Shutting down: Master
+[2024-05-01 03:55:16 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f6755b104c0>
+  on_reload: <function OnReload.on_reload at 0x7f6755b105e0>
+  when_ready: <function WhenReady.when_ready at 0x7f6755b10700>
+  pre_fork: <function Prefork.pre_fork at 0x7f6755b10820>
+  post_fork: <function Postfork.post_fork at 0x7f6755b10940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f6755b10a60>
+  worker_int: <function WorkerInt.worker_int at 0x7f6755b10b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f6755b10ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f6755b10dc0>
+  pre_request: <function PreRequest.pre_request at 0x7f6755b10ee0>
+  post_request: <function PostRequest.post_request at 0x7f6755b10f70>
+  child_exit: <function ChildExit.child_exit at 0x7f6755b11090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f6755b111b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f6755b112d0>
+  on_exit: <function OnExit.on_exit at 0x7f6755b113f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f6755b11510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-05-01 03:55:16 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-05-01 03:55:16 +0000] [1] [DEBUG] Arbiter booted
+[2024-05-01 03:55:16 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-05-01 03:55:16 +0000] [1] [INFO] Using worker: gthread
+[2024-05-01 03:55:16 +0000] [1] [DEBUG] 1 workers
+[2024-05-01 03:55:16 +0000] [15] [INFO] Booting worker with pid: 15
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-05-05 06:06:57 +0000] [1] [INFO] Handling signal: term
+[2024-05-05 06:06:58 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-05-05 06:19:11 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fd56f24c4c0>
+  on_reload: <function OnReload.on_reload at 0x7fd56f24c5e0>
+  when_ready: <function WhenReady.when_ready at 0x7fd56f24c700>
+  pre_fork: <function Prefork.pre_fork at 0x7fd56f24c820>
+  post_fork: <function Postfork.post_fork at 0x7fd56f24c940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd56f24ca60>
+  worker_int: <function WorkerInt.worker_int at 0x7fd56f24cb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd56f24cca0>
+  pre_exec: <function PreExec.pre_exec at 0x7fd56f24cdc0>
+  pre_request: <function PreRequest.pre_request at 0x7fd56f24cee0>
+  post_request: <function PostRequest.post_request at 0x7fd56f24cf70>
+  child_exit: <function ChildExit.child_exit at 0x7fd56f24d090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd56f24d1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd56f24d2d0>
+  on_exit: <function OnExit.on_exit at 0x7fd56f24d3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fd56f24d510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-05-05 06:19:11 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-05-05 06:19:11 +0000] [1] [DEBUG] Arbiter booted
+[2024-05-05 06:19:11 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-05-05 06:19:11 +0000] [1] [INFO] Using worker: gthread
+[2024-05-05 06:19:11 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-05-05 06:19:11 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-05-05 06:19:40 +0000] [1] [INFO] Handling signal: term
+[2024-05-05 06:19:41 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-05-05 06:19:41 +0000] [1] [INFO] Shutting down: Master
+[2024-05-05 06:33:27 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f24344284c0>
+  on_reload: <function OnReload.on_reload at 0x7f24344285e0>
+  when_ready: <function WhenReady.when_ready at 0x7f2434428700>
+  pre_fork: <function Prefork.pre_fork at 0x7f2434428820>
+  post_fork: <function Postfork.post_fork at 0x7f2434428940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2434428a60>
+  worker_int: <function WorkerInt.worker_int at 0x7f2434428b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2434428ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f2434428dc0>
+  pre_request: <function PreRequest.pre_request at 0x7f2434428ee0>
+  post_request: <function PostRequest.post_request at 0x7f2434428f70>
+  child_exit: <function ChildExit.child_exit at 0x7f2434429090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f24344291b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f24344292d0>
+  on_exit: <function OnExit.on_exit at 0x7f24344293f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f2434429510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-05-05 06:33:27 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-05-05 06:33:27 +0000] [1] [DEBUG] Arbiter booted
+[2024-05-05 06:33:27 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-05-05 06:33:27 +0000] [1] [INFO] Using worker: gthread
+[2024-05-05 06:33:27 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-05-05 06:33:27 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-05-11 17:20:22 +0000] [1] [INFO] Handling signal: term
+[2024-05-11 17:20:24 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-05-11 17:20:26 +0000] [1] [INFO] Shutting down: Master
+[2024-05-11 17:21:48 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f04d9d8c4c0>
+  on_reload: <function OnReload.on_reload at 0x7f04d9d8c5e0>
+  when_ready: <function WhenReady.when_ready at 0x7f04d9d8c700>
+  pre_fork: <function Prefork.pre_fork at 0x7f04d9d8c820>
+  post_fork: <function Postfork.post_fork at 0x7f04d9d8c940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f04d9d8ca60>
+  worker_int: <function WorkerInt.worker_int at 0x7f04d9d8cb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f04d9d8cca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f04d9d8cdc0>
+  pre_request: <function PreRequest.pre_request at 0x7f04d9d8cee0>
+  post_request: <function PostRequest.post_request at 0x7f04d9d8cf70>
+  child_exit: <function ChildExit.child_exit at 0x7f04d9d8d090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f04d9d8d1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f04d9d8d2d0>
+  on_exit: <function OnExit.on_exit at 0x7f04d9d8d3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f04d9d8d510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-05-11 17:21:48 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-05-11 17:21:48 +0000] [1] [DEBUG] Arbiter booted
+[2024-05-11 17:21:48 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-05-11 17:21:48 +0000] [1] [INFO] Using worker: gthread
+[2024-05-11 17:21:48 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-05-11 17:21:48 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-05-12 12:54:56 +0000] [1] [INFO] Handling signal: term
+[2024-05-12 12:54:56 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-05-12 12:54:57 +0000] [1] [INFO] Shutting down: Master
+[2024-05-15 10:47:47 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4ef289c4c0>
+  on_reload: <function OnReload.on_reload at 0x7f4ef289c5e0>
+  when_ready: <function WhenReady.when_ready at 0x7f4ef289c700>
+  pre_fork: <function Prefork.pre_fork at 0x7f4ef289c820>
+  post_fork: <function Postfork.post_fork at 0x7f4ef289c940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4ef289ca60>
+  worker_int: <function WorkerInt.worker_int at 0x7f4ef289cb80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4ef289cca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f4ef289cdc0>
+  pre_request: <function PreRequest.pre_request at 0x7f4ef289cee0>
+  post_request: <function PostRequest.post_request at 0x7f4ef289cf70>
+  child_exit: <function ChildExit.child_exit at 0x7f4ef289d090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4ef289d1b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4ef289d2d0>
+  on_exit: <function OnExit.on_exit at 0x7f4ef289d3f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f4ef289d510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-05-15 10:47:47 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-05-15 10:47:47 +0000] [1] [DEBUG] Arbiter booted
+[2024-05-15 10:47:47 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-05-15 10:47:47 +0000] [1] [INFO] Using worker: gthread
+[2024-05-15 10:47:47 +0000] [15] [INFO] Booting worker with pid: 15
+[2024-05-15 10:47:47 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-05-19 04:20:35 +0000] [1] [INFO] Handling signal: term
+[2024-05-19 04:20:38 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2024-05-19 04:20:45 +0000] [1] [INFO] Shutting down: Master
+[2024-05-19 04:21:43 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fbd456844c0>
+  on_reload: <function OnReload.on_reload at 0x7fbd456845e0>
+  when_ready: <function WhenReady.when_ready at 0x7fbd45684700>
+  pre_fork: <function Prefork.pre_fork at 0x7fbd45684820>
+  post_fork: <function Postfork.post_fork at 0x7fbd45684940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fbd45684a60>
+  worker_int: <function WorkerInt.worker_int at 0x7fbd45684b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fbd45684ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7fbd45684dc0>
+  pre_request: <function PreRequest.pre_request at 0x7fbd45684ee0>
+  post_request: <function PostRequest.post_request at 0x7fbd45684f70>
+  child_exit: <function ChildExit.child_exit at 0x7fbd45685090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fbd456851b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fbd456852d0>
+  on_exit: <function OnExit.on_exit at 0x7fbd456853f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fbd45685510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-05-19 04:21:43 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-05-19 04:21:43 +0000] [1] [DEBUG] Arbiter booted
+[2024-05-19 04:21:43 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-05-19 04:21:43 +0000] [1] [INFO] Using worker: gthread
+[2024-05-19 04:21:43 +0000] [14] [INFO] Booting worker with pid: 14
+[2024-05-19 04:21:43 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map
+[2024-06-06 15:13:59 +0000] [1] [INFO] Handling signal: term
+[2024-06-06 15:13:59 +0000] [14] [INFO] Worker exiting (pid: 14)
+[2024-06-06 15:13:59 +0000] [1] [INFO] Shutting down: Master
+[2024-06-06 15:14:26 +0000] [1] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: [':5000']
+  backlog: 2048
+  workers: 1
+  worker_class: gthread
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 300
+  graceful_timeout: 900
+  keepalive: 5
+  limit_request_line: 0
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /config/log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /config/log/error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0c54a484c0>
+  on_reload: <function OnReload.on_reload at 0x7f0c54a485e0>
+  when_ready: <function WhenReady.when_ready at 0x7f0c54a48700>
+  pre_fork: <function Prefork.pre_fork at 0x7f0c54a48820>
+  post_fork: <function Postfork.post_fork at 0x7f0c54a48940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0c54a48a60>
+  worker_int: <function WorkerInt.worker_int at 0x7f0c54a48b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0c54a48ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f0c54a48dc0>
+  pre_request: <function PreRequest.pre_request at 0x7f0c54a48ee0>
+  post_request: <function PostRequest.post_request at 0x7f0c54a48f70>
+  child_exit: <function ChildExit.child_exit at 0x7f0c54a49090>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0c54a491b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0c54a492d0>
+  on_exit: <function OnExit.on_exit at 0x7f0c54a493f0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f0c54a49510>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-06-06 15:14:26 +0000] [1] [INFO] Starting gunicorn 21.2.0
+[2024-06-06 15:14:26 +0000] [1] [DEBUG] Arbiter booted
+[2024-06-06 15:14:26 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2024-06-06 15:14:26 +0000] [1] [INFO] Using worker: gthread
+[2024-06-06 15:14:26 +0000] [16] [INFO] Booting worker with pid: 16
+[2024-06-06 15:14:26 +0000] [1] [DEBUG] 1 workers
+INFO:app:Starting the application...
+Creating repertoire map

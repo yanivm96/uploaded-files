@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+    madc:
+        image: madc
+        container_name: madc
+        volumes:
+            - /misc/work/mADC/config/flask/:/config
+            - /misc/work/mADC/studies/:/studies
+        environment:
+            - GUNICORN_WORKERS=1
+            - CELERY_WORKERS=1
+        restart: unless-stopped
+        ulimits:
+            nofile:
+                soft: "65536"
+                hard: "65536"
+
+networks:
+    default:
+        external: true
+        name: digby_network
